@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    color: #fff;
     /* background-color: black; */
 }
 
@@ -18,8 +17,9 @@ body{
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    padding: 10px 37px;
+    padding: 0px 50px;
     z-index: 1000000;
+    
 }
 
 .container .head img{
@@ -41,6 +41,28 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to bottom,#000,transparent);
+}
+
+.banner:after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: 1;
+    background: linear-gradient(to top,#000,transparent);
 }
 
 .banner .fit{
@@ -70,31 +92,34 @@ body{
 
 .banner .box .heading h2{
     font-size: 3em;
+    color: #fff;
     letter-spacing: 2px;
-    width: 80%;
+    width: 80%; 
 }
 
 .banner .box .heading h5{
     font-size: 1.5em;
+    color: #fff;
     font-weight: 300;
     padding: 1rem 0;
 }
 
 .banner .box .heading p{
     font-size: 1.2em;
+    color: #fff;
     font-weight: 300;
     padding: 15px 0;
-    padding-bottom: 20px;
+    /* padding-bottom: 20px; */
 }
 
-.banner .box .email{
+.banner .box .Email{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-.banner .box .email input{
+.banner .box .Email input{
     font-size: 16px;
     color: #000;
     height: 50px;
@@ -106,14 +131,15 @@ body{
     padding: 10px 10px 0 0;
 }
 
-.banner .box .email input::placeholder{
+.banner .box .Email input::placeholder{
     position: absolute;
     top: 22px;
     left: 10px;
 }
 
-.banner .box .email a{
+.banner .box .Email a{
     text-decoration: none;
+    color: #fff;
     font-weight: 400;
     background: #E50914;
     line-height: 61px;
@@ -125,12 +151,16 @@ body{
     text-align: center;
 }
 
-.card-1, .card-2, .card-3, .card-4{
+.card-1,
+.card-2,
+.card-3,
+.card-4{
     border-top: 8px solid #111;
     padding: 50px;
+    color: #fff;
 }
 
-.card-1, .card-3{
+.card-1{
     position: relative;
     display: inline-grid;
     grid-template-columns: 50% 40%;
@@ -139,7 +169,7 @@ body{
     padding: 25px 45px 50px;
 }
 
-.desc-1, .desc-3{
+.desc-1{
     padding-left: 80px;
 }
 
@@ -147,6 +177,7 @@ body{
     font-size: 3rem;
     padding: 1rem;
     padding-left: 0;
+
 }
 
 .style-cards p{
@@ -156,33 +187,15 @@ body{
 
 .card-1 video{
     position: relative;
-    height: 55%;
+    height: 58%;
     width: 100%;
     grid-column: 2/2;
     grid-row: 1/2;
     z-index: -1;
-    margin-left: 9%;
-    margin-top: -20px;
+    margin-left: 15%;
 }
 
 .card-1 img{
-    grid-column: 2/2;
-    grid-row: 1/2;
-}
-
-
-.card-3 video{
-    position: relative;
-    height: 46%;
-    width: 100%;
-    grid-column: 2/2;
-    grid-row: 1/2;
-    z-index: -1;
-    margin-left: 9%;
-    margin-bottom: 135px;
-}
-
-.card-3 img{
     grid-column: 2/2;
     grid-row: 1/2;
 }
@@ -198,4 +211,39 @@ body{
 
 .desc-2, .desc-4{
     padding-left: 100px;
+    /* padding-right: 20px; */
 }
+
+.card-3{
+    position: relative;
+    display: inline-grid;
+    grid-template-columns: 50% 40%;
+    text-align: left;
+    align-items: center;
+    padding: 25px 45px 50px;
+}
+
+.desc-3{
+    padding-left: 80px;
+}
+
+.card-3 video{
+    position: relative;
+    top: -90px;
+    left: 125px;
+    height: 78%;
+    width: 78%;
+    grid-column: 2/2;
+    grid-row: 1/2;
+    z-index: -1;
+    /* margin-left: 15%; */
+}
+
+.card-3 img{
+    grid-column: 2/2;
+    grid-row: 1/2;
+}
+
+
+
+
