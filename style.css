@@ -187,12 +187,13 @@ body{
 
 .card-1 video{
     position: relative;
-    height: 58%;
+    height: 55%;
     width: 100%;
     grid-column: 2/2;
     grid-row: 1/2;
     z-index: -1;
-    margin-left: 15%;
+    margin-left: 9%;
+    margin-bottom: 20px;
 }
 
 .card-1 img{
@@ -230,9 +231,9 @@ body{
 .card-3 video{
     position: relative;
     top: -90px;
-    left: 125px;
+    left: 121px;
     height: 78%;
-    width: 78%;
+    width: 75%;
     grid-column: 2/2;
     grid-row: 1/2;
     z-index: -1;
